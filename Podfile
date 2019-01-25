@@ -8,6 +8,8 @@ target 'Chip- Hotel Booking Chatbot' do
   # Pods for Chip- Hotel Booking Chatbot
     pod 'ApiAI'
 pod 'AI'
+pod 'SnapKit'
+pod 'Alamofire' 
 pod 'MBProgressHUD', '~> 1.0'
 
 end

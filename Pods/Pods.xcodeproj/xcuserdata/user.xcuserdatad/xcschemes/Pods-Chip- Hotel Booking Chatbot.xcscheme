@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3FD32338154A0E56A1AA70E38CED549"
+               BlueprintIdentifier = "B0B28A2DC33870DCB427C1BD2857BADA"
                BuildableName = "Pods_Chip__Hotel_Booking_Chatbot.framework"
                BlueprintName = "Pods-Chip- Hotel Booking Chatbot"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A3FD32338154A0E56A1AA70E38CED549"
+            BlueprintIdentifier = "B0B28A2DC33870DCB427C1BD2857BADA"
             BuildableName = "Pods_Chip__Hotel_Booking_Chatbot.framework"
             BlueprintName = "Pods-Chip- Hotel Booking Chatbot"
             ReferencedContainer = "container:Pods.xcodeproj">

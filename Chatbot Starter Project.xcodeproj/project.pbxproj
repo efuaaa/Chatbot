@@ -11,6 +11,7 @@
 		8B97F5C81F5A33B800F997FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC6E4DC1F5A292000033301 /* AppDelegate.swift */; };
 		8B97F5CA1F5A33C000F997FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC6E4D71F5A292000033301 /* Assets.xcassets */; };
 		BBC217C7EA0AEF49699AA6D5 /* Pods_Chip__Hotel_Booking_Chatbot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E407FAE2CE1FEF74598563 /* Pods_Chip__Hotel_Booking_Chatbot.framework */; };
+		CEED9EC021FAF5B8005BF4B0 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED9EBF21FAF5B8005BF4B0 /* ButtonsView.swift */; };
 		F41265B71FBC88DD00A47B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC6E4DA1F5A292000033301 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		8BC6E4DC1F5A292000033301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BC6E4DD1F5A292000033301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E407FAE2CE1FEF74598563 /* Pods_Chip__Hotel_Booking_Chatbot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chip__Hotel_Booking_Chatbot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEED9EBF21FAF5B8005BF4B0 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				8BC6E4DA1F5A292000033301 /* Main.storyboard */,
 				8BC6E4DC1F5A292000033301 /* AppDelegate.swift */,
 				8BC6E4DD1F5A292000033301 /* Info.plist */,
+				CEED9EBF21FAF5B8005BF4B0 /* ButtonsView.swift */,
 			);
 			path = "Chatbot Starter Project";
 			sourceTree = "<group>";
@@ -181,14 +184,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Chip- Hotel Booking Chatbot/Pods-Chip- Hotel Booking Chatbot-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AI/AI.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -201,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEED9EC021FAF5B8005BF4B0 /* ButtonsView.swift in Sources */,
 				8B97F5C81F5A33B800F997FD /* AppDelegate.swift in Sources */,
 				8B97F5C71F5A33B800F997FD /* ViewController.swift in Sources */,
 			);
@@ -342,6 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6L3P74R5AC;
 				INFOPLIST_FILE = "$(SRCROOT)/Chatbot Starter Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qodehub.chatbotdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6L3P74R5AC;
 				INFOPLIST_FILE = "$(SRCROOT)/Chatbot Starter Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qodehub.chatbotdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
