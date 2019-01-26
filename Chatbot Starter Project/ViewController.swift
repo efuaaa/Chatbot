@@ -16,101 +16,90 @@ class ViewController: UIViewController {
     
     
 
-    @IBOutlet weak var messageField: UITextField!
     @IBOutlet weak var chipResponse: UILabel!
-    
-    
-    
-    
     @IBOutlet weak var buttonsView: ButtonsView!
     
-    
-    
-    
-    
-    
-//    func buttonToMessageField(){
-//
-//
-//
-//    buttonsView.addAction
-//
+    @IBAction func reset(_ sender: Any) {
+        
+        
+        buttonsView.isHidden = false
+        let source = buttonsView.getButtonsValue()
+        let subset = source[0..<source.count-2]
+        
+        print(subset)
+        
+//       for i in 1...4
 //        {
-//           buttonsView.getButtons().text
-//            }
-//    }
-    
-//    //show with animation
-////    UIView.animate(withDuration: 0.5, animations:{
-////    self.headerView.alpha = 1
-////
-////    }, completion: { (finished: Bool) in
-////    UIView.animate(withDuration: 0.5) {
-////    self.mainView.alpha = 1
-////    }
-////    })
-//    
-//    }
-    
-//    func buttonWasTapped() {
-//        ButtonsView.getButtonsValue(buttonsView)
 //
-//        ButtonsView.label.text = messageField.text
-//        ButtonsView.textfield.text = ""
-//    }
+//        let source = buttonsView.getButtonsValue()
+//        let subset = source[0..<source.count-i]
+//        print(subset)
 //
-    func buttonTextToMessageField(){
-    buttonsView.addAction { text in
-    self.messageField.text = text
+//        }
     }
     
-    }
+//    func reset()
+//    {
+//
+////        for i in 1...4
+////        {
+//         buttonsView.isHidden = false
+//            let source = buttonsView.getButtonsValue()
+//            let subset = source[0..<source.count-2]
+//
+////          buttonsView.getButtonsValue() = subset
+//
+////        }
+//    }
+//
+    //  func buttonTextToMessageField(){
+        //buttonsView.addAction { text in
+      //      self.messageField.text = text
+    //    }
+    //}
     
     func buttonTextToApi(){
         buttonsView.addAction { text in
             self.newRequest(text)
+            let source = self.buttonsView.getButtonsValue(stringA: ["tdfghjn"])
+            let subset = source[0..<source.count-2]
+            print(subset)
+//            ButtonsView.animate(withDuration: 2.5) {
+//                self.buttonsView.getButtons().button = .orange
+//            }
+//          self.buttonsView.removeFromSuperview()
+            var sauce : [AnyObject] = source as [AnyObject]
+            sauce.append(subset as AnyObject)
+          
+//            self.buttonsView.
+            self.buttonsView.getButtonsValue(stringA: subset)
+          
         }
         
     }
     
+//    func resetButtons()
+//    {
     
-    
-    
-    
-//    @IBAction func sendMessage(_ sender: Any) {
+       
 //
-//        //let hud = MBProgressHUD.showAdded(to: self.view.window!, animated: true)
+//        buttonsView.isHidden = true
 //
-//        let request = ApiAI.shared().textRequest()
+
 //
-//        if let text = self.messageField.text, text != "" {
-//            request?.query = text
-//        } else {
-//            return
-//        }
-////        buttonsView
-//        request?.setMappedCompletionBlockSuccess({ (request, response) in
-//            let response = response as! AIResponse
-//            if let textResponse = response.result.fulfillment.messages {
-//                let textRespoArray = textResponse [ 0 ] as NSDictionary
-//                print(textResponse)
-//                self.speechAndText(text:textRespoArray.value(forKey: "speech") as! String)
-//            }
-//        }, failure: { (request, error) in
-//            print(error!)
-//        })
 //
-//        ApiAI.shared().enqueue(request)
-//        messageField.text = ""
 //    }
     
+    
+    
+
     
     func newRequest(_ text: String) {
         
         let request = ApiAI.shared().textRequest()
         request?.query = text
         
-
+       
         request?.setMappedCompletionBlockSuccess({ (request, response) in
             let response = response as! AIResponse
             if let textResponse = response.result.fulfillment.messages {
@@ -123,9 +112,8 @@ class ViewController: UIViewController {
         })
         
         ApiAI.shared().enqueue(request)
-        messageField.text = ""
-      
         
+//    buttonsView.isHidden = true
     }
         let speechSynthesizer = AVSpeechSynthesizer()
         
