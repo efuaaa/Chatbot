@@ -52,7 +52,7 @@ class ButtonsView: UIView {
     }
     
     // MARK: Get an array of buttons value
-    func getButtonsValue(_: String) -> [String] {
+    func getButtonsValue() -> [String] {
         let hello = "Let's get started"
         let forecat = "okay"
         let sanFrancisco = "San Francisco weather"
@@ -61,13 +61,12 @@ class ButtonsView: UIView {
 //        let umbrella = "Will I need an umbrella?"
 //        let lifeSense = "What is the sense of the life?"
 //        let isGoingTo = "Is going to rain tomorrow in New York?"
-       return [hello, forecat, sanFrancisco, whoAreYou]
-        
+        return [hello, forecat, sanFrancisco, whoAreYou]
     }
     
     // MARK: Create the buttons array
     func getButtons() -> [UIButton] {
-        return getButtonsValue(stringA: ["sas"]).map { label in
+        return getButtonsValue().map { label in
             let button = UIButton()
             button.setTitle(label, for: .normal)
             button.setTitleColor(.gray, for: .normal)

@@ -61,18 +61,18 @@ class ViewController: UIViewController {
     func buttonTextToApi(){
         buttonsView.addAction { text in
             self.newRequest(text)
-            let source = self.buttonsView.getButtonsValue(stringA: ["tdfghjn"])
+            let source = self.buttonsView.getButtonsValue()
             let subset = source[0..<source.count-2]
             print(subset)
 //            ButtonsView.animate(withDuration: 2.5) {
 //                self.buttonsView.getButtons().button = .orange
 //            }
 //          self.buttonsView.removeFromSuperview()
-            var sauce : [AnyObject] = source as [AnyObject]
-            sauce.append(subset as AnyObject)
+//            var sauce : [AnyObject] = source as [AnyObject]
+//            sauce.append(subset as AnyObject)
           
 //            self.buttonsView.
-            self.buttonsView.getButtonsValue(stringA: subset)
+//            self.buttonsView.getButtonsValue(stringA: subset)
           
         }
         
